@@ -1,4 +1,5 @@
-# Jörgs Development Copy of Blog engine for ASP.NET Core 7
+# Fork von Miniblohg.Core mit meinen Änderungen und Ergänzungen
+Hier sollten sich Updates am Original übernehmen lassen.
 ![Screenshot.png](Screenshot.png)
 A full-featured yet simple blog engine built on ASP.NET Core 7.0.
  
