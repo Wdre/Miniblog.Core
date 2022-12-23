@@ -19,7 +19,7 @@ namespace Miniblog.Core
         public static readonly string Scripts = "Scripts";
         public static readonly string slug = "slug";
         public static readonly string Space = " ";
-        public static readonly string Title = "Title";
+        public static readonly string Title = "Technik Blog von Jörg Walkowiak";
         public static readonly string TotalPostCount = "TotalPostCount";
         public static readonly string ViewOption = "ViewOption";
 

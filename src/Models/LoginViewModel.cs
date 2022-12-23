@@ -8,7 +8,7 @@ namespace Miniblog.Core.Models
         [DataType(DataType.Password)]
         public string Password { get; set; } = string.Empty;
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Angemeldet bleiben?")]
         public bool RememberMe { get; set; } = false;
 
         [Required]

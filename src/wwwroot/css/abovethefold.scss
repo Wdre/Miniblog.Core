@@ -30,10 +30,15 @@ body {
     padding: 0 1.5em;
 }
 
+/*Header auf der Startseite, _layout.cshtml*/
 .siteheader {
-    text-align: right;
-    padding: .8em 1.5em 2em 1.5em;
+    position: sticky;
+    top:0 ;
 
+
+    text-align: left;
+/*    padding: .8em 1.5em 2em 1.5em;
+*/
     p {
         font-size: 2em;
     }

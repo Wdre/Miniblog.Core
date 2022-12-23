@@ -16,19 +16,19 @@
         <input type="hidden" asp-for="@Model.ID" />
 
     <label asp-for="@Model.Title" class="label">@Miniblog.Core.Properties.Resources.Title</label>
-    <input asp-for="@Model.Title" required placeholder=@Miniblog.Core.Properties.Resources.TitleOfBlogPost aria-describedby="desc_title" />
-    <span class="desc" id="desc_title">@Miniblog.Core.Properties.Resources.TitleAsItAppearsOnTheWebsite</span>
+        <input asp-for="@Model.Title" required placeholder="Title of blog post" aria-describedby="desc_title" />
+        <span class="desc" id="desc_title">Die Überschrift für den Artikel auf dieser Website</span>
         <br />
 
     <label asp-for="@Model.Slug" class="label">@Miniblog.Core.Properties.Resources.Slug</label>
         <input asp-for="@Model.Slug" placeholder="The URL name" aria-describedby="desc_slug" />
-    <span class="desc" id="desc_slug">@Miniblog.Core.Properties.Resources.ThePartOfTheURLThatIdentifiesThisBlogPost</span>
+        <span class="desc" id="desc_slug">Der Teil der URL, der diesen Blogbeitrag identifiziert</span>
         <br />
 
-    <label for="categories" class="label">@Miniblog.Core.Properties.Resources.Categories</label>
+        <label for="categories" class="label">Kategorien</label>
         <input type="text" name="selectcat" id="selectcat" aria-describedby="desc_categories" list="catlist" placeholder="@string.Join(", ", Model.Categories)"  />
         <input type="text" name="categories" id="categories" value="@string.Join(", ", Model.Categories)" hidden />
-    <span class="desc" id="desc_categories">@Miniblog.Core.Properties.Resources.SelectOrBuildACommaSeparatedListOfKeywordsToRemoveDoubleTheKeyword</span>
+    <span class="desc" id="desc_categories">@Miniblog.Core.Properties.Resources.SelectOrBuildACommaSeparatedListOfKeywords_toRemoveDoubleTheKeyword</span>
         <datalist id="catlist">
             @foreach (var cat in allCats)
             {
@@ -40,7 +40,7 @@
         <label for="tags" class="label">Tags</label>
         <input type="text" name="selecttag" id="selecttag" aria-describedby="desc_tags" list="taglist" placeholder="@string.Join(", ", Model.Tags)"  />
         <input type="text" name="tags" id="tags" value="@string.Join(", ", Model.Tags)" hidden />
-    <span class="desc" id="desc_tags">@Miniblog.Core.Properties.Resources.SelectOrBuildACommaSeparatedListOfKeywordsToRemoveDoubleTheKeyword</span>
+    <span class="desc" id="desc_tags">@Miniblog.Core.Properties.Resources.SelectOrBuildACommaSeparatedListOfKeywords_toRemoveDoubleTheKeyword</span>
         <datalist id="taglist">
             @foreach (var tag in allTags)
             {
@@ -49,22 +49,22 @@
             </datalist>
         <br />
 
-    <label asp-for="@Model.Excerpt" class="label">@Miniblog.Core.Properties.Resources.Excerpt</label>
-    <textarea asp-for="@Model.Excerpt" rows="3" placeholder="@Miniblog.Core.Properties.Resources.ShortDescriptionOfBlogPost" aria-describedby="desc_excerpt">@Model.Excerpt</textarea>
-    <span class="desc" id="desc_excerpt">@Miniblog.Core.Properties.Resources.ShortDescriptionOfBlogPost</span>
+        <label asp-for="@Model.Excerpt" class="label">@Miniblog.Core.Properties.Resources.Excerpt</label>
+        <textarea asp-for="@Model.Excerpt" rows="3" placeholder="Short description of blog post" aria-describedby="desc_excerpt">@Model.Excerpt</textarea>
+        <span class="desc" id="desc_excerpt">Eine kurze Zusammenfassung des Post Inhalts...</span>
         <br />
 
         <textarea asp-for="@Model.Content" rows="20" aria-label="Content">@Model.Content</textarea>
         <br />
 
-    <input type="submit" value="@Miniblog.Core.Properties.Resources.Save" title="@Miniblog.Core.Properties.Resources.SaveThePost" />
+    <input type="submit" value=@Miniblog.Core.Properties.Resources.Save title="@Miniblog.Core.Properties.Resources.SaveThePost" />
 
         <input asp-for="@Model.IsPublished" />
-        <label asp-for="@Model.IsPublished">Is published</label>
+        <label asp-for="@Model.IsPublished">Veröffentlicht!</label>
 
         @if (!isNew)
         {
-            <input type="submit" value="Delete..." class="delete" title="Delete the post..." asp-action="DeletePost" asp-route-id="@Model.ID" />
+        <input type="submit" value=@Miniblog.Core.Properties.Resources.Delete class="delete" title="Delete the post..." asp-action="DeletePost" asp-route-id="@Model.ID" />
         }
     </form>
 

@@ -3,7 +3,7 @@
 
 <section id="comments">
     <div class="container">
-        <h2>Comments</h2>
+        <h2>Kommentare</h2>
         @foreach (var comment in Model.Comments)
         {
             <article id="@comment.ID" class="@(comment.IsAdmin ? "admin" : null)" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
@@ -34,22 +34,22 @@
         {
             if (Model.Comments.Count == 0)
             {
-                <p>Be the first to post a comment</p>
+                <p>Kommentieren Sie als erster...</p>
             }
 
             <form method="post" asp-controller="Blog" asp-action="AddComment" asp-route-postid="@Model.ID" asp-antiforgery="false">
-                <h3>Post a comment</h3>
+                <h3>Einen Kommentar veröffentlichen</h3>
                 <br />
 
                 <label for="content">Comment</label>
-                <textarea id="content" name="content" rows="5" cols="100" onfocus="" required placeholder="Enter your comment here..."></textarea>
+                <textarea id="content" name="content" rows="5" cols="100" onfocus="" required placeholder="Geben Sie Ihren Kommentar hier ein..."></textarea>
 
                 <div class="details">
                     <label for="author">Name</label>
-                    <input id="author" name="author" placeholder="Your name" required />
+                    <input id="author" name="author" placeholder="Dein Name" required />
 
                     <label for="email">E-mail</label>
-                    <input id="email" name="email" placeholder="Example: mary@outlook.com" required />
+                    <input id="email" name="email" placeholder="Beispiel: mary@outlook.com" required />
                     <br />
 
                     <input type="submit" value="Post comment" />
@@ -61,13 +61,13 @@
 
             <noscript>
                 <br />
-                <p>Enable JavaScript to post comments on this blog.</p>
+                <p>JavaScript muss in Ihrem Browser aktiv sein, um kommentieren zu können.</p>
             </noscript>
         }
         else
         {
             <br />
-            <p>Comments are closed</p>
+            <p>Die Kommentarfunktion ist geschlossen.</p>
         }
     </div>
 </section>

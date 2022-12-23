@@ -118,66 +118,123 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BadRequestTheRequestCannotBeFulfilledDueToBadSyntax" xml:space="preserve">
-    <value>Bad request: The request cannot be fulfilled due to bad syntax</value>
+    <value>Bad request: die Anforderung konnte wegen falscher Formulierung nicht bearbeitet werden</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Kategorien</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>Kommentar</value>
+  </data>
+  <data name="comments" xml:space="preserve">
+    <value>Kommentare</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="DeleteThePost" xml:space="preserve">
+    <value>Post Löschen...</value>
+  </data>
+  <data name="EditPost" xml:space="preserve">
+    <value>Post bearbeiten</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>Error</value>
+    <value>Fehler</value>
+  </data>
+  <data name="Excerpt" xml:space="preserve">
+    <value>Zusammenfassung</value>
   </data>
   <data name="Forbidden" xml:space="preserve">
-    <value>Forbidden</value>
+    <value>Verboten</value>
   </data>
   <data name="InternalServerErrorServerWasUnableToFinishProcessingTheRequest" xml:space="preserve">
-    <value>Internal Server Error - server was unable to finish processing the request</value>
+    <value>Interner Server Fehler - der Server konnte die Anforderung nicht beenden</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
   </data>
   <data name="MiniblogCore" xml:space="preserve">
-    <value>Miniblog.Core</value>
+    <value>Jörgs Blog</value>
   </data>
   <data name="NewPost" xml:space="preserve">
-    <value>New post</value>
+    <value>Neuer Post</value>
   </data>
   <data name="Offline" xml:space="preserve">
     <value>Offline</value>
   </data>
   <data name="PageNotFound" xml:space="preserve">
-    <value>Page not found</value>
+    <value>Seite nicht gefunden</value>
   </data>
   <data name="PoweredBy" xml:space="preserve">
     <value>Powered by</value>
   </data>
+  <data name="Published" xml:space="preserve">
+    <value>Veröffentlicht</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Angemeldet bleiben</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="SaveThePost" xml:space="preserve">
+    <value>Post speichern</value>
+  </data>
+  <data name="SelectOrBuildACommaSeparatedListOfKeywordsToRemoveDoubleTheKeyword" xml:space="preserve">
+    <value>Wählen Sie Keywords aus oder erstellen Sie eine durch Kommata getrennte Liste von Keywords, um doppelte Keywords zu entfernen</value>
+  </data>
+  <data name="SelectOrBuildACommaSeparatedListOfKeywords_toRemoveDoubleTheKeyword" xml:space="preserve">
+    <value>Wählen Sie die Schlagworte aus, oder erstellen Sie eine durch Kommata getrennte Liste von Schlagworten - um ein Schlagwort zu entfernen, geben Sie es erneut ein</value>
+  </data>
+  <data name="ShortDescriptionOfBlogPost" xml:space="preserve">
+    <value>Eine kurze Beschreibung des Inhalts des Beitrags</value>
+  </data>
   <data name="SignIn" xml:space="preserve">
-    <value>Sign in</value>
+    <value>Anmelden</value>
   </data>
   <data name="SignInAsAdministrator" xml:space="preserve">
-    <value>Sign in as administrator</value>
+    <value>Anmelden als Administrator</value>
   </data>
   <data name="SignInToTheWebsite" xml:space="preserve">
     <value>Sign in to the website</value>
   </data>
   <data name="SignOut" xml:space="preserve">
-    <value>Sign out</value>
+    <value>Abmelden</value>
   </data>
   <data name="SignOutAsAdministrator" xml:space="preserve">
-    <value>Sign out as administrator</value>
+    <value>Als Administrator abmelden</value>
+  </data>
+  <data name="Slug" xml:space="preserve">
+    <value>SEO/URL</value>
   </data>
   <data name="SomeFeaturesOfThisWebsiteDoNotWorkAsExpectedWhenJavaScriptIsDisabled" xml:space="preserve">
-    <value>Some features of this website do not work as expected when JavaScript is disabled</value>
+    <value>Einige Features dieser Website funktionierfennicht einwandfrei, wenn Sie JavaScript in Ihrem Browser deaktiviert haben</value>
   </data>
   <data name="ThatsOddSomethingWeDidntExpectHappened" xml:space="preserve">
-    <value>That’s odd... Something we didn't expect happened</value>
+    <value>Das ist übel... - es ist gerade etwas passiert, wo icvh nicht mit gerechnet habe</value>
   </data>
   <data name="ThePageYouRequestedCanNotBeShownBecauseYouAreOffline" xml:space="preserve">
-    <value>The page you requested can not be shown because you are offline.</value>
+    <value>Die Seite, die du sehen möchtest, kann dir aktuell nicht angezeigt werden, weil du offline bist</value>
+  </data>
+  <data name="ThePartOfTheURLThatIdentifiesThisBlogPost" xml:space="preserve">
+    <value>Der Teil der URL, der diesen Artikel auf der Site eindeutig identifizieren soll </value>
   </data>
   <data name="TheServerTimedOutWaitingForTheRequest" xml:space="preserve">
-    <value>The server timed out waiting for the request</value>
+    <value>Der Server hat die Verbindung aufgrund der langen Dauer beendet</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="TitleAsItAppearsOnTheWebsite" xml:space="preserve">
+    <value>Überschrift für den Artikel auf dieser Website</value>
+  </data>
+  <data name="TitleOfBlogPost" xml:space="preserve">
+    <value>Titel des Postings</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
-    <value>Unauthorized</value>
+    <value>Unauthorisiert</value>
   </data>
   <data name="UsernameOrPasswordIsInvalid" xml:space="preserve">
-    <value>Username or password is invalid.</value>
+    <value>Benutzername oder Passwort falsch.</value>
   </data>
 </root>

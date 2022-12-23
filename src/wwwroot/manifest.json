@@ -1,7 +1,7 @@
 {
-  "name": "Miniblog.Core",
-  "short_name": "Miniblog.Core",
-  "description": "A short description of the blog.",
+  "name": "Home | Was ich interessant finde",
+  "short_name": "Jörgs Blog",
+  "description": "Nützliches und Wissenswertes rund um PC, Smart TV und Smartphone.",
   "icons": [
     {
       "src": "/img/icon192x192.png",

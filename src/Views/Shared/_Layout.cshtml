@@ -4,7 +4,7 @@
     var host = $"{Context.Request.Scheme}://{Context.Request.Host}";
 }
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head prefix="og:http://ogp.me/ns#">
     <meta charset="utf-8" />
     <title>@ViewData[Constants.Title]</title>
@@ -42,9 +42,9 @@
 <body itemscope itemtype="http://schema.org/WebPage">
 
     <header class="siteheader">
-        <div class="container">
+        <div style="background-color:aqua"  class="container">
             <p itemprop="name"><a href="~/" itemprop="url">@manifest.Name</a></p>
-            By <span itemprop="author">@settings.Value.Owner</span>
+            Notizen zu Android, Smart-TV, PC und Windows - von <span itemprop="author">@settings.Value.Owner</span>
         </div>
     </header>
 
@@ -66,17 +66,17 @@
                         {
                             <li><a asp-controller="Blog" asp-action="Edit" asp-route-id="">@Miniblog.Core.Properties.Resources.NewPost</a></li>
                             <li><a href="~/logout/" title="@Miniblog.Core.Properties.Resources.SignOutAsAdministrator">@Miniblog.Core.Properties.Resources.SignOut</a></li>
+                            <li><small>© Copyright @DateTime.Now.Year by <a href="https://joerg-walkowiak.de" rel="noopener noreferrer" target="_blank">Jörg Walkowiak</a></small></li>
                         }
                         else
                         {
+                            <li><a href="https://server-1.net/GlobalPages/Cookie-Richtlinie-Server-1.html" rel="noopener noreferrer" target="iframe_a">Datenschutzerklärung & Impressum</a></li>
                             <li><a href="~/login/?returnUrl=@path" rel="nofollow" title="@Miniblog.Core.Properties.Resources.SignInAsAdministrator">@Miniblog.Core.Properties.Resources.SignIn</a></li>
                         }
                     }
                 </ul>
-            </nav>
-            <p>
-                @Miniblog.Core.Properties.Resources.PoweredBy <a href="https://github.com/madskristensen/Miniblog.Core" rel="noopener noreferrer" target="_blank">@Miniblog.Core.Properties.Resources.MiniblogCore</a>
-            </p>
+@*                Besucher: <img src="~/Counter/counter.aspx?src=digits.gif&amp;digits=5&amp;id=home" />
+*@            </nav>
         </div>
     </footer>
 
